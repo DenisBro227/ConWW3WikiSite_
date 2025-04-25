@@ -10,17 +10,23 @@
         }
         .note {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             padding: 10px;
             border-radius: 5px;
             margin: 10px 0;
         }
+        .note div {
+            display: inline-flex;
+            align-items: center;
+        }
         .note i {
-            font-size: 20px;
+            font-size: 25px;
             margin-right: 10px;
+            vertical-align: middle;
         }
         .note .content {
             max-width: 100%;
+            white-space: normal;
         }
         .note.warning {
             background-color: #fdecea;
@@ -30,52 +36,47 @@
             background-color: #eef6fb;
             border-left: 5px solid #2196f3;
         }
+        .s {
+            font-size: 25px;
+            color: #2196f3;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Список сносок</h1>
-    <ul>
-        <li><a href="#note1">Сноска 1</a></li>
-        <li><a href="#note2">Сноска 2</a></li>
-        <li><a href="#note3">Сноска 3</a></li>
-        <li><a href="#note4">Сноска 4</a></li>
-        <li><a href="#note5">Сноска 5</a></li>
-    </ul>
-
     <div id="note1" class="note warning">
-        <i>⚠️</i>
+        <div class="s">⚠️</div>
         <div class="content">
-            <strong>«Я играю только за крупные страны»</strong> — это <strong>плохая отговорка</strong>, чтобы не повышать своё мастерство.
+            <strong>«Я играю только за крупные страны»</strong>&nbsp— это <strong>&nbspплохая отговорка</strong>, чтобы не повышать своё мастерство.
         </div>
     </div>
 
     <div id="note2" class="note info">
-        <i>ⓘ</i>
+        <div class="s">ℹ️</div>
         <div class="content">
-            <strong>Оккупированный город</strong> работает лишь на <strong>25%</strong> от своей эффективности.
+            <strong>Оккупированный город</strong>&nbspработает лишь на <strong>&nbsp25%</strong>&nbspот своей эффективности.
         </div>
     </div>
 
     <div id="note3" class="note info">
-        <i>ℹ️</i>
+        <div class="s">ℹ️</div>
         <div class="content">
             У одиночных юнитов, таких как ракеты, знать вес бессмысленно.
         </div>
     </div>
 
     <div id="note4" class="note info">
-        <i>ⓘ</i>
+        <div class="s">ℹ️</div>
         <div class="content">
-            <strong>Дисклеймер:</strong> в основном догадки, сделанные логическим путём. <strong>Официально не подтверждено.</strong>
+            <strong>Дисклеймер:</strong>&nbspв основном догадки, сделанные логическим путём. <strong>Официально не подтверждено.</strong>
         </div>
     </div>
 
     <div id="note5" class="note info">
-        <i>ⓘ</i>
+        <div class="s">ℹ️</div>
         <div class="content">
-            <strong>Коэффициент F</strong> представляет собой отношение Урона к ХП цели.
+            <strong>Коэффициент F</strong>&nbspпредставляет собой отношение Урона к ХП цели.
         </div>
     </div>
-
 </body>
 </html>
